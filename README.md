@@ -1,4 +1,4 @@
-QuickBLE Nordic51822 MDBT40開發板電路圖參考
+Arduino IDE support QuickBLE Nordic51822 MDBT40開發板電路圖參考
 ===========================
 相關資料請參考下列文件
 
