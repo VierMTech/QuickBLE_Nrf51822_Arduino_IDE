@@ -14,18 +14,98 @@
  * strengths everything works well.
  */
 
-
 // Import libraries (BLEPeripheral depends on SPI)
 #include <SPI.h>
-#include "QuickBLE_device.h"
-#include "QuickBLE_ble.h"
+#include <BLEPeripheral.h>
+#include "BLESerial.h"
+
+// define pins (varies per shield/board)
+#define BLE_REQ   10
+#define BLE_RDY   2
+#define BLE_RST   9
+
+// create ble serial instance, see pinouts above
+BLESerial BLESerial(BLE_REQ, BLE_RDY, BLE_RST);
+
+#define _device_Buzzer_ 10
+#define _device_USB1_ 11
+#define _device_USB2_ 12
+#define _device_Relay1_ 13
+#define _device_Relay2_ 14
+
+#define _PIN_1_ 17
+#define _PIN_2_ 18
+#define _PIN_3_ 19
+#define _PIN_6_ 23
+#define _PIN_7_ 24
 
 void setup() {
-  QuickBLE_ble_init();
-  QuickBLE_device_init();
+  
+  BLESerial.setLocalName("Quick_test");
+  BLESerial.setDeviceName("Quick_test");
+  BLESerial.begin();
+  
+  pinMode(_device_Buzzer_,OUTPUT);
+  pinMode(_device_USB1_,OUTPUT);
+  pinMode(_device_USB2_,OUTPUT);
+  pinMode(_device_Relay1_,OUTPUT);
+  pinMode(_device_Relay2_,OUTPUT);
+
+  pinMode(_PIN_1_,INPUT);
+  pinMode(_PIN_2_,INPUT);
+  pinMode(_PIN_3_,INPUT);
+  pinMode(_PIN_6_,OUTPUT);
+  pinMode(_PIN_7_,OUTPUT);  
 }
 
 void loop() {
+  BLESerial.poll(); 
   QuickBLE_ble_process();
-  QuickBLE_device_process();
+}
+
+void QuickBLE_ble_process(void)
+{    
+    if (BLESerial) {
+      int ble_data;
+      char rx_buffer[50]={0};
+      int rx_buffer_number=0;
+      
+      while ((ble_data = BLESerial.read()) > 0)
+      {      
+          rx_buffer[rx_buffer_number]=ble_data;
+          rx_buffer_number++;
+      }
+      
+      if(strcmp(rx_buffer,"buzzerON")==0) digitalWrite(_device_Buzzer_,HIGH);
+      else if(strcmp(rx_buffer,"buzzerOFF")==0) digitalWrite(_device_Buzzer_,LOW);
+      else if(strcmp(rx_buffer,"usb1ON")==0) digitalWrite(_device_USB1_,HIGH);
+      else if(strcmp(rx_buffer,"usb1OFF")==0) digitalWrite(_device_USB1_,LOW);
+      else if(strcmp(rx_buffer,"usb2ON")==0) digitalWrite(_device_USB2_,HIGH);
+      else if(strcmp(rx_buffer,"usb2OFF")==0) digitalWrite(_device_USB2_,LOW);
+      else if(strcmp(rx_buffer,"relay1ON")==0) digitalWrite(_device_Relay1_,HIGH);
+      else if(strcmp(rx_buffer,"relay1OFF")==0) digitalWrite(_device_Relay1_,LOW);
+      else if(strcmp(rx_buffer,"relay2ON")==0) digitalWrite(_device_Relay2_,HIGH);
+      else if(strcmp(rx_buffer,"relay2OFF")==0) digitalWrite(_device_Relay2_,LOW);
+      
+      if(strcmp(rx_buffer,"DO1HIGH")==0) digitalWrite(_PIN_6_,HIGH);
+      else if(strcmp(rx_buffer,"DO1LOW")==0) digitalWrite(_PIN_6_,LOW);
+      else if(strcmp(rx_buffer,"DO2HIGH")==0) digitalWrite(_PIN_7_,HIGH);
+      else if(strcmp(rx_buffer,"DO2LOW")==0) digitalWrite(_PIN_7_,LOW);
+
+      if(strcmp(rx_buffer,"Pin1State")==0) 
+      {
+        if(digitalRead(_PIN_1_)==HIGH) BLESerial.write("PIN1 is HIGH");
+        if(digitalRead(_PIN_1_)==LOW) BLESerial.write("PIN1 is LOW");
+      }
+      else if(strcmp(rx_buffer,"Pin2State")==0) 
+      {
+        if(digitalRead(_PIN_2_)==HIGH) BLESerial.write("PIN2 is HIGH");
+        if(digitalRead(_PIN_2_)==LOW) BLESerial.write("PIN2 is LOW");
+      }
+      else if(strcmp(rx_buffer,"Pin3State")==0) 
+      {
+        if(digitalRead(_PIN_3_)==HIGH) BLESerial.write("PIN3 is HIGH");
+        if(digitalRead(_PIN_3_)==LOW) BLESerial.write("PIN3 is LOW");
+      }
+  }
 }
