@@ -20,3 +20,7 @@ Arduino IDE support QuickBLE Nordic51822 MDBT40開發板電路圖參考
 
 ### QuickBLE EVB on Arduino User Q&A
 [QuickBLE EVB on Arduino User Q&A.pdf](https://github.com/VierMTech/QuickBLE_Nrf51822_Arduino_IDE/blob/master/QuickBLE%20EVB%20on%20Arduino%20User%20Q%26A.pdf "QuickBLE EVB on Arduino User Q&A")
+
+--------------------------------------
+### QuickBLE_EVB_Serial使用教學.pdf
+[QuickBLE EVB on Arduino User Q&A.pdf](https://github.com/VierMTech/QuickBLE_Nrf51822_Arduino_IDE/blob/master/QuickBLE_EVB_Serial%E4%BD%BF%E7%94%A8%E6%95%99%E5%AD%B8.pdf "QuickBLE_EVB_Serial使用教學.pdf")
