@@ -27,3 +27,6 @@ Arduino IDE support QuickBLE Nordic51822 MDBT40開發板
 
 ### QuickBLE_EVB_BH1750_GY302_I2C_Wire教學
 [QuickBLE_EVB_BH1750_GY302_I2C_Wire教學.pdf](https://github.com/VierMTech/QuickBLE_Nrf51822_Arduino_IDE/blob/master/QuickBLE_EVB_BH1750_GY302_I2C_Wire%E6%95%99%E5%AD%B8.pdf "QuickBLE_EVB_BH1750_GY302_I2C_Wire教學.pdf")
+
+### QuickBLE_EVB_Timer教學
+[QuickBLE_EVB_Timer教學.pdf](https://github.com/VierMTech/QuickBLE_Nrf51822_Arduino_IDE/blob/master/QuickBLE_EVB_Timer%E6%95%99%E5%AD%B8.pdf "QuickBLE_EVB_Timer教學.pdf")
