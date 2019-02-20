@@ -44,4 +44,5 @@ Arduino IDE support QuickBLE Nordic51822 MDBT40開發板
 [QuickBLE_EVB_Timer教學.pdf](https://github.com/VierMTech/QuickBLE_Nrf51822_Arduino_IDE/blob/master/QuickBLE_EVB_Timer%E6%95%99%E5%AD%B8.pdf "QuickBLE_EVB_Timer教學.pdf")
 
 ### Quickble_Serial_Timer_LedBlink_GY-521_MPU6050教學
-[Quickble_Serial_Timer_LedBlink_GY-521_MPU6050教學.pdf](https://github.com/VierMTech/QuickBLE_Nrf51822_Arduino_IDE/blob/master/Document/Quickble_Serial_Timer_LedBlink_GY-521_MPU6050%E6%95%99%E5%AD%B8.pdf "Quickble_Serial_Timer_LedBlink_GY-521_MPU6050教學.pdf)
+[Quickble_Serial_Timer_LedBlink_GY-521_MPU6050教學.pdf](https://github.com/VierMTech/QuickBLE_Nrf51822_Arduino_IDE/blob/master/Document/Quickble_Serial_Timer_LedBlink_GY-521_MPU6050%E6%95%99%E5%AD%B8.pdf "Quickble_Serial_Timer_LedBlink_GY-521_MPU6050教學.pdf")
+
