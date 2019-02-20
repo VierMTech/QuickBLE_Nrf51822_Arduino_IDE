@@ -1,5 +1,17 @@
 Arduino IDE support QuickBLE Nordic51822 MDBT40開發板
 ===========================
+
+### 目錄說明
+
+AppInventor App Inventor 2 	教學範例
+Document					教學文件
+Example						範例程式碼
+Schematic					電路圖
+variants/QuickBLE_EVB		Arduino Board Package
+
+===========================
+
+
 相關資料請參考下列文件
 
 ### 使用教學文件PDF
