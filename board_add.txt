@@ -1,0 +1,43 @@
+
+QuickBLE_EVB.name=QuickBLE EVB
+
+QuickBLE_EVB.upload.tool=sandeepmistry:openocd
+QuickBLE_EVB.upload.target=nrf51
+QuickBLE_EVB.upload.maximum_size=262144
+
+QuickBLE_EVB.bootloader.tool=sandeepmistry:openocd
+
+QuickBLE_EVB.build.mcu=cortex-m0
+QuickBLE_EVB.build.f_cpu=16000000
+QuickBLE_EVB.build.board=QuickBLE_EVB
+QuickBLE_EVB.build.core=nRF5
+QuickBLE_EVB.build.variant=QuickBLE_EVB
+QuickBLE_EVB.build.variant_system_lib=
+QuickBLE_EVB.build.extra_flags=-DNRF51
+QuickBLE_EVB.build.float_flags=
+QuickBLE_EVB.build.ldscript=nrf51_{build.chip}.ld
+
+QuickBLE_EVB.build.lfclk_flags=-DUSE_LFXO
+
+QuickBLE_EVB.menu.chip.xxaa=16 kB RAM, 256 kB flash (xxaa)
+QuickBLE_EVB.menu.chip.xxaa.build.chip=xxaa
+QuickBLE_EVB.menu.chip.xxac=32 kB RAM, 256 kB flash (xxac)
+QuickBLE_EVB.menu.chip.xxac.build.chip=xxac
+
+QuickBLE_EVB.menu.softdevice.none=None
+QuickBLE_EVB.menu.softdevice.none.softdevice=none
+QuickBLE_EVB.menu.softdevice.none.softdeviceversion=
+
+QuickBLE_EVB.menu.softdevice.s110=S110
+QuickBLE_EVB.menu.softdevice.s110.softdevice=s110
+QuickBLE_EVB.menu.softdevice.s110.softdeviceversion=8.0.0
+QuickBLE_EVB.menu.softdevice.s110.upload.maximum_size=151552
+QuickBLE_EVB.menu.softdevice.s110.build.extra_flags=-DNRF51 -DS110 -DNRF51_S110
+QuickBLE_EVB.menu.softdevice.s110.build.ldscript=armgcc_s110_nrf51822_{build.chip}.ld
+
+QuickBLE_EVB.menu.softdevice.s130=S130
+QuickBLE_EVB.menu.softdevice.s130.softdevice=s130
+QuickBLE_EVB.menu.softdevice.s130.softdeviceversion=2.0.1
+QuickBLE_EVB.menu.softdevice.s130.upload.maximum_size=151552
+QuickBLE_EVB.menu.softdevice.s130.build.extra_flags=-DNRF51 -DS130 -DNRF51_S130
+QuickBLE_EVB.menu.softdevice.s130.build.ldscript=armgcc_s130_nrf51822_{build.chip}.ld
