@@ -49,6 +49,9 @@ Arduino IDE support QuickBLE Nordic51822 MDBT40開發板
 ### Quickble Serial Timer LedBlink HCSR-04 教學
 [Quickble_Serial_Timer_LedBlink_HCSR04.pdf](https://github.com/VierMTech/QuickBLE_Nrf51822_Arduino_IDE/blob/master/Document/Quickble_Serial_Timer_LedBlink_HCSR04.pdf "Quickble_Serial_Timer_LedBlink_HCSR04.pdf")
 
+### Quickble Serial Timer ADC 教學
+[Quickble Serial Timer ADC example](https://github.com/VierMTech/QuickBLE_Nrf51822_Arduino_IDE/tree/master/Example/Quickble_Serial_Timer_ADC "Quickble Serial Timer ADC")
+
 
 --------------------------------------
 
