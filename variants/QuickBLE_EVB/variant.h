@@ -56,12 +56,12 @@ extern "C"
 /*
  * Analog pins
  */
-#define PIN_A0               (2)
-#define PIN_A1               (3)
-#define PIN_A2               (4)
-#define PIN_A3               (5)
-#define PIN_A4               (6)
-#define PIN_A5               (7)
+#define PIN_A0               (1)
+#define PIN_A1               (2)
+#define PIN_A2               (1)
+#define PIN_A3               (2)
+#define PIN_A4               (1)
+#define PIN_A5               (2)
 
 static const uint8_t A0  = PIN_A0 ;
 static const uint8_t A1  = PIN_A1 ;
