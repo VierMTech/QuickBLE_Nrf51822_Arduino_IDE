@@ -96,7 +96,7 @@ void loop() {
     Serial.println("V");
 
     PIN5_ADC = analogRead(A1);
-    Serial.print("ADC A1 PIN5: ");  //QuickBLE PIN4 (range:0~5V)
+    Serial.print("ADC A1 PIN5: ");  //QuickBLE PIN5 (range:0~5V)
     Serial.print(PIN5_ADC);         //0~1024
     Serial.print(", Voltage(0~5V):");
     Serial.print(PIN5_ADC*5/1024);          //0~5
