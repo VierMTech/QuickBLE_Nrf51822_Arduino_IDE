@@ -25,10 +25,10 @@ Arduino IDE support QuickBLE Nordic51822 MDBT40開發板
 
 
 ### 電路圖PDF
-[使用Arduino-IDE-開發QuickBLE_V1.0.pdf](https://github.com/VierMTech/QuickBLE_Nrf51822_Arduino_IDE/blob/master/Document/QuickBLE%20V11%20-%202018%2008%2017.pdf "電路圖")
+[使用Arduino-IDE-開發QuickBLE_V1.0.pdf](https://github.com/VierMTech/QuickBLE_Nrf51822_Arduino_IDE/blob/master/Schematic/QuickBLE%20V11%20-%202018%2008%2017.pdf "電路圖")
 
 ### Schematic
-[使用Arduino-IDE-開發QuickBLE_V1.0.pdf](https://github.com/VierMTech/QuickBLE_Nrf51822_Arduino_IDE/blob/master/Document/QuickBLE%20V11%20-%202018%2008%2017.pdf "Schematic")
+[使用Arduino-IDE-開發QuickBLE_V1.0.pdf](https://github.com/VierMTech/QuickBLE_Nrf51822_Arduino_IDE/blob/master/Schematic/QuickBLE%20V11%20-%202018%2008%2017.pdf "Schematic")
 
 ### QuickBLE EVB on Arduino User Q&A
 [QuickBLE EVB on Arduino User Q&A.pdf](https://github.com/VierMTech/QuickBLE_Nrf51822_Arduino_IDE/blob/master/Document/QuickBLE%20EVB%20on%20Arduino%20User%20Q%26A.pdf "QuickBLE EVB on Arduino User Q&A")
